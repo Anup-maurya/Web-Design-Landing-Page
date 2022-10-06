@@ -22,7 +22,7 @@ This Page is built using **HTML5 and CSS3**.
 
 <br>
 
-![Screenshot](./Images/screencapture.png)
+![Screenshot](./images/screencapture.png)
 
 
 ## 📌 My process
