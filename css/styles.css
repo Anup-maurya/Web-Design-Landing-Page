@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url("../images/backcover.svg");
+  background-position: right;
+  background-size: 870px;
+  background-repeat: no-repeat;
+}
+button {
+  cursor: pointer;
+}
+
+/* Navbar Section */
+
+.main-div {
+  max-width: 70rem;
+  margin: 30px auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 120px;
+}
+.nav-items {
+  display: flex;
+  color: #3e4794;
+}
+.nav-item {
+  margin: 0 30px;
+  cursor: pointer;
+}
+nav .btn {
+  border: none;
+  background: linear-gradient(to right, #965cf2, #ff8adc);
+  padding: 4px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.menu-icon {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Hero section  */
+
+.intro-section {
+  display: flex;
+  padding-top: 50px;
+}
+.left-section {
+  max-width: 50%;
+  margin-top: 100px;
+}
+.intro-section h1 {
+  color: #251b92;
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+.intro-section h4 {
+  color: #6c6c6c;
+  font-weight: normal;
+  width: 300px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+.btn-lm {
+  border: none;
+  background: linear-gradient(to right, #965cf2, #ff8adc);
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.imgs-div img:nth-child(3) {
+  position: fixed;
+  top: 15%;
+  right: 5%;
+  height: 80vh;
+  width: 55vw;
+}
+.vector-img {
+  position: fixed;
+  top: 65%;
+  left: 45%;
+}
+.vector-dot {
+  position: fixed;
+  top: 65%;
+  left: 48.5%;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: 680px;
+  }
+  .main-div {
+    padding: 3% 10%;
+  }
+  nav img {
+    height: 40px;
+  }
+  .imgs-div img:nth-child(3) {
+    height: 100vh;
+    width: 50vw;
+  }
+  .vector-dot {
+    left: 49.5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: 500px;
+    background-position: top right;
+  }
+  .main-div {
+    padding: 5px 20px;
+  }
+  .nav-items,
+  .btn {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .imgs-div img:nth-child(3) {
+    height: 50vh;
+  }
+  .intro-section {
+    padding-top: 120px;
+  }
+  .left-section h1 {
+    font-size: 48px;
+  }
+  .vector-dot,
+  .vector-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    background: none;
+  }
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: -180px;
+  }
+  .left-section {
+    width: 100%;
+  }
+  .imgs-div img:nth-child(3) {
+    position: sticky;
+    width: 75vw;
+  }
+}
